@@ -126,7 +126,7 @@ metricbeat-playbook.yml
       name: metricbeat
       enabled: yes
 
-
+-
 
 
 This document contains the following details:
@@ -143,12 +143,12 @@ This document contains the following details:
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 
 Load balancing ensures that the application will be highly functional, in addition to restricting traffic to the network.
-- _TODO: What aspect of security do load balancers protect? What is the advantage of a jump box?
+- What aspect of security do load balancers protect? What is the advantage of a jump box?
     Load balancers protect the avalibility of servers. An advantage of having a jumpbox is that it allows another step for authentication for logging in.
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the network and system logs.
-- _TODO: What does Filebeat watch for? It monitors log files and location that are specified
-- _TODO: What does Metricbeat record? Records metric and statics
+- What does Filebeat watch for? It monitors log files and location that are specified
+- What does Metricbeat record? Records metric and statics
 
 The configuration details of each machine may be found below.
 _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
@@ -168,9 +168,9 @@ Only the JumpBox machine can accept connections from the Internet. Access to thi
 - 199.111.213.242
 
 Machines within the network can only be accessed by JumpBox Machine.
--_TODO: Which machine did you allow to access your ELK VM?_
+- Which machine did you allow to access your ELK VM?_
       JumpBox Machine
--  What was its IP address?_
+- What was its IP address?_
       52.170.90.12
 
 A summary of the access policies in place can be found in the table below.
@@ -184,10 +184,10 @@ A summary of the access policies in place can be found in the table below.
 ### Elk Configuration
 
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
-- _TODO: What is the main advantage of automating configuration with Ansible?_ Automating configuration saves time when it is necessary to make configurations to multiple machines
+- What is the main advantage of automating configuration with Ansible?_ Automating configuration saves time when it is necessary to make configurations to multiple machines
 
 The playbook implements the following tasks:
-- _TODO: In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc._
+- In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc._
 - ...
 Install Docker,
 Start Docker container,
@@ -215,7 +215,7 @@ Metricbeats
 
 
 These Beats allow us to collect the following information from each machine:
-- _TODO: In 1-2 sentences, explain what kind of data each beat collects, and provide 1 example of what you expect to see. E.g., `Winlogbeat` collects Windows logs, which we use to track user logon events, etc._
+- In 1-2 sentences, explain what kind of data each beat collects, and provide 1 example of what you expect to see. E.g., `Winlogbeat` collects Windows logs, which we use to track user logon events, etc._
 
 Filebeat collects log files from machines. An example . Metric Beats collect how well our system does.
 
@@ -227,7 +227,7 @@ SSH into the control node and follow the steps below:
 - Update the filebeat-configuration file to include P1VM private IP
 - Run the playbook, and navigate to http://13.77.206.135:5601 to check that the installation worked as expected.
 
-_TODO: Answer the following questions to fill in the blanks:_
+Answer the following questions to fill in the blanks:_
 - _Which file is the playbook? Where do you copy it?_
 filebeat-playbook.yml and copy it into the /etc/ansible/roles directory
 - _Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?_ You use the groups part of the configuration files and put the IPs of the machines you want to use.
