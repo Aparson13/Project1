@@ -5,6 +5,8 @@ BCS Project
 The files in this repository were used to configure the network depicted below.
 
 ![TODO: Update the path with the name of your diagram](Desktop/Images/Diagram.png)
+![Diagram](https://user-images.githubusercontent.com/85695649/135544758-9b392f78-a66f-4831-9c55-b9e93386e0a5.png)
+
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the _____ file may be used to install only certain pieces of it, such as Filebeat.
 
