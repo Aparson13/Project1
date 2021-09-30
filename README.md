@@ -4,7 +4,6 @@ BCS Project
 
 The files in this repository were used to configure the network depicted below.
 
-![TODO: Update the path with the name of your diagram](Desktop/Images/Diagram.png)
 ![Diagram](https://user-images.githubusercontent.com/85695649/135544758-9b392f78-a66f-4831-9c55-b9e93386e0a5.png)
 
 
@@ -170,9 +169,9 @@ Only the JumpBox machine can accept connections from the Internet. Access to thi
 - 199.111.213.242
 
 Machines within the network can only be accessed by JumpBox Machine.
-- Which machine did you allow to access your ELK VM?_
+- Which machine did you allow to access your ELK VM?
       JumpBox Machine
-- What was its IP address?_
+- What was its IP address?
       52.170.90.12
 
 A summary of the access policies in place can be found in the table below.
@@ -190,13 +189,13 @@ Ansible was used to automate configuration of the ELK machine. No configuration 
 
 The playbook implements the following tasks:
 - In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc._
-- ...
-Install Docker,
-Start Docker container,
-Enter Docker container,
-Create elk playbook,
-Run elk playbook,
-- ...
+
+- Install Docker,
+- Start Docker container,
+- Enter Docker container,
+- Create elk playbook,
+- Run elk playbook,
+
 
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
@@ -205,19 +204,17 @@ The following screenshot displays the result of running `docker ps` after succes
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
-- _TODO: List the IP addresses of the machines you are monitoring_
+
 10.0.0.5
 10.0.0.6
 
 We have installed the following Beats on these machines:
-- _TODO: Specify which Beats you successfully installed_
 
 Filebeats
 Metricbeats
 
 
 These Beats allow us to collect the following information from each machine:
-- In 1-2 sentences, explain what kind of data each beat collects, and provide 1 example of what you expect to see. E.g., `Winlogbeat` collects Windows logs, which we use to track user logon events, etc._
 
 Filebeat collects log files from machines. An example . Metric Beats collect how well our system does.
 
@@ -230,7 +227,7 @@ SSH into the control node and follow the steps below:
 - Run the playbook, and navigate to http://13.77.206.135:5601 to check that the installation worked as expected.
 
 Answer the following questions to fill in the blanks:_
-- _Which file is the playbook? Where do you copy it?_
+- _Which file is the playbook? Where do you copy it?
 filebeat-playbook.yml and copy it into the /etc/ansible/roles directory
 - _Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?_ You use the groups part of the configuration files and put the IPs of the machines you want to use.
 - _Which URL do you navigate to in order to check that the ELK server is running? http://13.77.206.135:5601/
